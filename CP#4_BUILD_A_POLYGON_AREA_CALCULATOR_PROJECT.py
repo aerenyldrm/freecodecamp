@@ -27,6 +27,18 @@ class Square(Rectangle):
     def __init__(self, side_length):
         super().__init__(width = side_length, height = side_length)
         self.side_length = side_length
+    def setWidth(self, update_width):
+        self.width = update_width
+        self.height = update_width
+        self.side_length = update_width
+    def setHeight(self, update_height):
+        self.width = update_height
+        self.height = update_height
+        self.side_length = update_height
+    def setSide(self, update_side):
+        self.width = update_side
+        self.height = update_side
+        self.side_length = update_side
     def __str__(self):
         return f"{self.__class__.__name__}(side = {self.side_length})"
 if __name__ == "__main__":
